@@ -1,11 +1,22 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:funkyboys_boutique/Screens/rentdetails.dart';
+import 'package:funkyboys_boutique/Screens/forgotpassword.dart';
+import 'package:funkyboys_boutique/Screens/homepage.dart';
+import 'package:funkyboys_boutique/Screens/login.dart';
+import 'package:funkyboys_boutique/Screens/profilesettings.dart';
+import 'package:funkyboys_boutique/Screens/splashscreen.dart';
 import 'package:funkyboys_boutique/Screens/onboarding1.dart';
-import 'package:funkyboys_boutique/Screens/onboarding2.dart';
-import 'package:funkyboys_boutique/Screens/onboarding3.dart';
+import 'package:funkyboys_boutique/Screens/resetpassword.dart';
+import 'package:funkyboys_boutique/Screens/signup.dart';
+import 'package:funkyboys_boutique/Screens/trainingdetails.dart';
+import 'package:funkyboys_boutique/Screens/videographydetails.dart';
 import 'package:get/get.dart';
-import 'package:intro_slider/intro_slider.dart';
 
-void main() {
+Future<void> main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
   runApp(const MyApp());
 }
 
@@ -15,22 +26,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
-      ),
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Onboarding1()
+      home: VideographyDetails()
     );
   }
 }

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "796116378732",
+    "project_id": "funkyboys-3edb7",
+    "storage_bucket": "funkyboys-3edb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796116378732:android:7f152c1c56acd252c6e449",
+        "android_client_info": {
+          "package_name": "com.example.funkyboys_boutique"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796116378732-92dgpbm6h1tvuepo1qrgfr03l16inci2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.funkyboys_boutique",
+            "certificate_hash": "df408fb240c97636929f82c8b6c337953a4c9121"
+          }
+        },
+        {
+          "client_id": "796116378732-gv97k2lkvu6e7vls25mngsd3hl3m0aur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmhWp-a5Pu_iSlCz2awpYbxYtyBKW7Yn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796116378732-gv97k2lkvu6e7vls25mngsd3hl3m0aur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
